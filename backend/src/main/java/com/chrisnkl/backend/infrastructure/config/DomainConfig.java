@@ -1,4 +1,4 @@
-package com.chrisnkl.backend.infrastracture.config;
+package com.chrisnkl.backend.infrastructure.config;
 
 import com.chrisnkl.backend.application.service.RentCarService;
 import org.springframework.context.annotation.Bean;

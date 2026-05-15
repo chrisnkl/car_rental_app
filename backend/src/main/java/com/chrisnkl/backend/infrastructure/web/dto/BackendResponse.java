@@ -1,4 +1,4 @@
-package com.chrisnkl.backend.infrastracture.web.dto;
+package com.chrisnkl.backend.infrastructure.web.dto;
 
 public record BackendResponse<T>(
 

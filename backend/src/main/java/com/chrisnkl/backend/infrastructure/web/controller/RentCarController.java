@@ -1,9 +1,9 @@
-package com.chrisnkl.backend.infrastracture.web.controller;
+package com.chrisnkl.backend.infrastructure.web.controller;
 
 import com.chrisnkl.backend.domain.port.in.rent_car.RentCarUseCase;
-import com.chrisnkl.backend.infrastracture.web.dto.BackendResponse;
-import com.chrisnkl.backend.infrastracture.web.dto.rent_car.RentCarRequest;
-import com.chrisnkl.backend.infrastracture.web.dto.rent_car.RentCarResponse;
+import com.chrisnkl.backend.infrastructure.web.dto.BackendResponse;
+import com.chrisnkl.backend.infrastructure.web.dto.rent_car.RentCarRequest;
+import com.chrisnkl.backend.infrastructure.web.dto.rent_car.RentCarResponse;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
