@@ -4,7 +4,7 @@ import com.chrisnkl.backend.domain.model.Rental;
 
 import java.util.Optional;
 
-public interface RentalRepository {
+public interface RentalRepositoryPort {
 
     Rental save(Rental rental);
     Optional<Rental> findById(String rentalId);

@@ -29,7 +29,7 @@ public record RentCarCommand(
             throw new RentCarValidationException(String.format(errorMessage, "Invalid driver id"));
         }
 
-        if (amount.compareTo(BigDecimal.ZERO) < 0) {
+        if (amount != null && amount.compareTo(BigDecimal.ZERO) < 0) {
             throw new RentCarValidationException(String.format(errorMessage, "Invalid amount is less than zero"));
         }
 
