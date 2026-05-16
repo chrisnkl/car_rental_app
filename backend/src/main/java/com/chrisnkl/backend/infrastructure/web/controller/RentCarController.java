@@ -1,5 +1,6 @@
 package com.chrisnkl.backend.infrastructure.web.controller;
 
+import com.chrisnkl.backend.domain.model.Rental;
 import com.chrisnkl.backend.domain.port.in.rent_car.RentCarUseCase;
 import com.chrisnkl.backend.infrastructure.web.dto.BackendResponse;
 import com.chrisnkl.backend.infrastructure.web.dto.rent_car.RentCarRequest;
@@ -28,8 +29,7 @@ public class RentCarController {
 
         log.info("Received http request for rent creation: {}", Instant.now());
 
-
-
+        RentCarResponse response = new RentCarResponse(rentCarUseCase.execute(request.toCommand()));
 
     }
 

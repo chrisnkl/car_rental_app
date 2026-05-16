@@ -6,29 +6,10 @@ import java.util.UUID;
 
 public record Billing(
 
+        UUID billingId,
         UUID rentalId,
-        BillingState state,
-        BillingMethod paymentMethod,
-        BigDecimal amount,
-        Instant paidAt,
-        Instant dueDate,
+        BigDecimal monthlyAmount,
         Instant createdAt
 
 ) {
-
-    public enum BillingState {
-
-       UNPAID,
-       PAID
-
-    }
-
-    public enum BillingMethod {
-
-        CREDIT_CARD,
-        DEBIT_CARD,
-        PAYPAL,
-        STRIPE
-    }
-
 }
